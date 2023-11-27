@@ -1,0 +1,272 @@
+/* Nav sttyles */
+.navbar {
+  padding: 1.2rem 2rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: var(--bg-color-dark);
+  z-index: 1000;
+}
+
+.scroll_container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100dvh;
+}
+
+
+.navbar p {
+  font-size: var(--h2-font);
+  font-family: 'logoFont';
+}
+
+.navbar p span {
+  font-family: 'logoFont';
+  font-weight: bold;
+  color: var(--hover);
+}
+
+/* Hero styles */
+.hero_container_full {
+  height: 100vh;
+  padding: 7rem 2rem 0 2rem;
+  color: #fff;
+  scroll-snap-align: start;
+}
+
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero_image {
+  height: 110px;
+  width: 120px;
+  border-radius: 50% 40%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.hero_image_lg {
+  display: none;
+}
+
+.hero_image img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero_header {
+  font-size: var(--h3-font);
+  /* font-weight: 600; */
+  margin-top: 15px;
+}
+
+.hero_header_lg {
+  display: none;
+}
+
+.header_description { 
+  line-height: 2.0;
+  /* margin-top: 10px; */
+  font-size: var(--normal-font);
+  color: var(--text-color-dark);
+}
+
+.header_description span {
+  font-size: var(--project-font);
+  transition: all .5s ease;
+}
+
+.header_description span:hover {
+  color: var(--hover);
+}
+
+.hero_socials {
+  display: flex;
+  gap: 3rem;
+}
+
+.hero_socials a i {
+  font-size: var(--h3-font);
+}
+
+.hero_socials_lg {
+  display: none;
+}
+
+.hero_socials a i:hover {
+  color: var(--hover);
+  transition: all .3s ease;
+}
+
+.hero_inspire {
+  font-size: var(--xsmall-font);
+  color: var(--text-color-dark);
+}
+
+
+
+/* projects styles */
+.projects_container { 
+  height: 100vh;
+  padding: 5rem 2rem;
+  scroll-snap-align: start;
+}
+
+.projects {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.projects h6 {
+  color: var(--hover);
+}
+
+/* Box styles */
+.box_container {
+  width: 100%;
+  background: var(--box-color);
+  position: sticky;
+  top: 0;
+}
+
+.projects_box_direct {
+  position: relative;
+  display: grid;
+  gap: 15px;
+  height: 50%;
+  overflow-y: auto;
+}
+
+.project_description p {
+  font-size: var(--h4-font);
+  margin-bottom: 10px;
+}
+
+.small_txt {
+  font-size: var(--xsmall-font);
+  color: var(--text-color-dark);
+}
+
+.project_links a:nth-child(1) {
+  margin-right: 10px;
+}
+
+.project_links a, .project_links a i {
+  transition: all .3s ease-in-out;
+}
+
+
+.project_links a:hover, .project_links a:hover i {
+  color: var(--hover);
+}
+
+.small_txt i {
+  color: var(--text-coease-in-out)
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.2rem 2rem;
+}
+
+@media screen and (min-width: 900px)
+{
+  .scroll_container
+  {
+    display: grid;
+    grid-template-columns: 48% 1fr;
+  }
+
+  .hero_container_full
+  {
+    padding-top: 7rem;
+    padding-left: 5rem;
+  }
+
+  .hero_container {
+    align-items: start;
+  }
+
+  .projects_container {
+    padding-top: 7rem;
+    padding-right: 5rem;
+  }
+
+  .navbar {
+    padding: 2rem 5rem;
+  }
+
+  .hero_socials {
+    display: none;
+  }
+
+  .hero_socials_lg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .hero_socials_lg a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: var(--small-font);
+    font-weight: lighter;
+    color: var(--text-color-dark);
+    transition: all .3s ease;
+  }
+  
+  .hero_socials_lg a:hover, .hero_socials_lg a:hover i {
+    color: var(--hover);
+  }
+  
+  .hero_socials_lg a i {
+    color: var(--text-color-dark);
+    transition: all .3s ease;
+    margin-top: 3px;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .image_md, .hero_header {
+    display: none;
+  }
+  .hero_image_lg, .hero_header_lg {
+    display: block;
+  }
+
+  .hero_header_lg {
+    font-size: var(--h2-font);
+    text-align: left;
+  }
+
+  .daniel {
+    /* color: var(--hover); */
+    animation: colorize 2000ms infinite linear;
+  }
+
+  @keyframes colorize {
+    50% {
+      color: var(--hover);
+    }
+    25%, 75%, 100% {
+      color: #fff;
+    }
+  }
+}
