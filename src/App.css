@@ -4,7 +4,6 @@
   position: fixed;
   right: 0;
   left: 0;
-  background: var(--bg-color-dark);
   z-index: 1000;
 }
 
@@ -12,6 +11,7 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100dvh;
+  position: relative;
 }
 
 
@@ -126,6 +126,7 @@
   gap: 15px;
   grid-template-columns: 1fr;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .projects h6 {
@@ -143,8 +144,9 @@
 .projects_box_direct {
   position: relative;
   display: grid;
+  align-items: start;
   gap: 15px;
-  height: 50%;
+  height: 335px;
   overflow-y: auto;
 }
 
@@ -189,12 +191,16 @@
   {
     display: grid;
     grid-template-columns: 48% 1fr;
+    scroll-snap-type: none;
   }
 
   .hero_container_full
   {
     padding-top: 7rem;
     padding-left: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
 
   .hero_container {
@@ -204,6 +210,10 @@
   .projects_container {
     padding-top: 7rem;
     padding-right: 5rem;
+  }
+
+  .projects_box_direct {
+    overflow-y: scroll;
   }
 
   .navbar {

@@ -12,12 +12,12 @@ const Box = ({ title, description, live, code, linkLive, linkCode }) => {
           {
             linkLive 
             && 
-            <a href={linkLive} className="small_txt"><i className="fi fi-br-link"></i> Live</a>
+            <a href={linkLive} target='_blank' className="small_txt"><i className="fi fi-br-link"></i> Live</a>
           }
           { 
             linkCode 
             && 
-            <a href={linkCode} className="small_txt"><i className="fi fi-rr-code-branch"></i> Code</a>
+            <a href={linkCode} target='_blank' className="small_txt"><i className="fi fi-rr-code-branch"></i> Code</a>
           }
         </div>
       </div>

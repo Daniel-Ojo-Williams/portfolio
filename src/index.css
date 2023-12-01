@@ -6,8 +6,8 @@
   src: url('./assets/logo.ttf');
 }
 @font-face {
-  font-family: logoFont2;
-  src: url('./assets/QuentinPro.ttf');
+  font-family: SpaceGrotesk;
+  src: url('./assets/SpaceGrotesk-VariableFont_wght.ttf');
 }
 
 *{
@@ -30,7 +30,7 @@
   --normal-font: 0.8rem;
   --small-font: 0.75rem;
   --xsmall-font: 0.7rem;
-  --font-family: "poppins", "sans-serif";
+  --font-family: "SpaceGrotesk", "sans-serif";
   --bg-color-dark: #151515;
   --box-color: #1b1b1d;
   --text-color-dark: #777778;
