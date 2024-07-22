@@ -7,6 +7,13 @@ const projects = [
     linkCode: "https://github.com/Daniel-Ojo-Williams/urlShortener",
     linkLive: "https://minify.onrender.com",
   },
+  {
+    id: 2,
+    title: "Task Management app API",
+    description:
+      "API to manage tasks with duedate and also an email reminder, 24 hrs before task dudate.",
+    linkCode: "https://github.com/Daniel-Ojo-Williams/task-management-app-API"
+  },
 ];
 
 export default projects
